@@ -1,0 +1,351 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+  min-height: 100vw;
+  min-width: 100vh;
+}
+
+.up-header{
+  position: relative;
+  background: rgba(0, 0, 0, 0.938);
+  padding: 2px 0;
+  color: rgb(221, 221, 221);
+}
+
+.extra-info{
+  text-align:start;
+  display: flex;
+  padding: 0 5%;
+}
+
+.sponsor{
+  padding: 0 5px;
+  height: 15px;
+}
+
+.information-container{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.information-slider{
+  display:flex;
+  width: 300%;
+  margin-left: -100%;
+}
+
+.information-slider-section{
+  color: white;
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+
+header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 60px;
+  background: rgb(220, 223, 238);
+  box-shadow: 0 5px 15px rgb(0, 0, 0,0.07);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+
+
+#isotype-header-logo{
+  max-width: 90px;
+  width: 6vmax;
+}
+
+.Eleven-Electronics-logo{
+  display: flex;
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.Eleven-Electronics-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.Eleven-Electronics-name p{
+  font-family: 'Questrial', sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+.switch.conteiner{
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 4000px;
+}
+
+.lbl{
+  display: flex;
+  width: 65px;
+  height: 33px;
+  background: #979797;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  transition: .25s;
+}
+
+.switch.conteiner:hover{
+  color: black;
+}
+
+.lbl::after{
+  content:"";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #eee;
+  border-radius: 100px;
+  position: absolute;
+  top:4px;
+  left: 4px;
+  transition: .25s;
+}
+
+#switch:checked + .lbl::after{
+  left: 36px;
+}
+
+#switch:checked + .lbl{
+  background: black;
+}
+
+#switch{
+  display: none;
+}
+
+
+.serch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(158, 158, 158);
+  border-radius: 60px;
+  padding: 4px 60px;
+  backdrop-filter: blur(4px) saturated(180px);
+}
+
+.serch-bar{
+  background: transparent;
+
+  border: none;
+  outline: none;
+  font-size: 18px;
+  position: relative;
+  padding: auto 300px;
+  right: 40px;
+  margin-right: -80px;
+  width: 300px;
+  color: rgb(245, 243, 233);
+}
+
+.serch-bar::placeholder{
+  color: rgb(245, 243, 233);
+}
+
+
+.serch-submit-button{
+  border: none;
+  outline: none;
+  position: relative;
+  left: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+  margin: auto 5px;
+  width: 35px;
+  height:35px;
+  background: #58629bc0;
+  cursor: pointer;
+}
+
+#serch-icon{
+  color: white;
+  margin-left: -2px;
+  margin-bottom: -2px;
+}
+
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li{
+  list-style:none;
+  padding: 0 1em;
+  position: relative;
+
+}
+
+.menu li a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.menu li a:hover,
+.menu li a.active{
+  color: rgb(132, 0, 255);
+}
+
+.menu li a.active::after,
+.menu li a:hover::after{
+  content: "";
+  width: 35%;
+  height: 2px;
+  background-color: rgb(132, 0, 255);
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+  transition: .4s;
+}
+
+
+.slider-container {
+  width: 100%;
+  height: auto;
+  margin:auto;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.411);
+  position: relative;
+  background: #979797;
+}
+
+.slider{
+  display: flex;
+  width: 300%;
+  height: auto;
+  margin-left: -100%;
+}
+
+.slider-section{
+  width: 100%;
+  height: max-content;
+}
+
+.slider-img{
+  display: block;
+  width: 100%;
+  height: max-content;
+  object-fit: cover;
+}
+
+.slider-btn{
+  position: absolute;
+  top: 50%;
+  transform: translate(y);
+  width: 40px;
+  height: 40px;
+  border-radius: 1000px;
+  text-align:center;
+  background: rgba(202, 202, 202, 0.589);
+  font-size: 30px;
+  color: rgb(132, 0, 255);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.slider-btn:hover{
+  background: rgba(132, 0, 255, 0.932);
+  transition: .4s;
+}
+
+.slider-btn-left{
+  left: 10px;
+}
+
+.slider-btn-right{
+  right: 10px;
+}
+
+.advantages{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  margin-inline: 20px;
+  margin-top: 30px;
+}
+
+.ad-container{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 15px 20px  rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(218, 182, 252, 0.801);
+  display: flexbox;
+  margin: 15px 0;
+}
+
+
+.ad-container:hover{
+  box-shadow: 10px 10px 60px  rgba(86, 0, 167, 0.12);
+  cursor: pointer;
+}
+
+.ad-container img{
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: -9px;
+}
+
+.ad-container h6{
+  display: inline-block;
+  padding: 10% 10%;
+  margin-top: 10px;
+  line-height: 1;
+  border-radius: 4px;
+  color: black;
+  box-shadow: 15px 10px 25px  rgba(0, 0, 0, 0.08);
+}
+
+.ad-best-products{
+  background: rgb(255, 124, 248);
+}
+
+.ad-low-prices{
+  background: rgb(255, 212, 212);
+}
+
+.ad-simple-interface{
+  background: rgb(190, 230, 253);
+}
+
+.ad-free-shipping{
+  background: rgb(252, 206, 107);
+}
+
+.ad-great-readiness{
+  background: rgb(255, 212, 212);
+}
+
+.ad-safe-payment{
+  background: rgb(206, 253, 191);
+}
+
+
